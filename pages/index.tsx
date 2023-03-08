@@ -299,6 +299,7 @@ const Home: NextPage = () => {
                       <Web3Button
                         contractAddress={nftDrop?.getAddress() || ""}
                         action={(cntr) => cntr.erc721.claim(quantity)}
+                        accentColor="#ff0000"
                         isDisabled={!canClaim || buttonLoading}
                         onError={(err) => {
                           console.error(err);
